@@ -28,7 +28,7 @@ class RtmRepository {
     await _login(userId);
     try {
       // とりあえずチャンネル3270に入ることにする。
-      _channel = await _createChannel("32560");
+      _channel = await _createChannel("3270");
       await _channel.join();
     } on Exception catch (err) {
       print("チャンネル参加に失敗しました： $err");
